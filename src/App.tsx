@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Typography } from '@mui/material';
+import { Button, Grid, Link, Typography } from '@mui/material';
 
 const App : React.FC = () : React.ReactElement => {
   return (
@@ -11,7 +11,32 @@ const App : React.FC = () : React.ReactElement => {
         <div className="App-title">
         <Typography variant='h1'>Jesse Suksia</Typography>
         <Typography variant='h2'>Data Processing Student & Security Professional</Typography>
-        <Typography variant='h5'>Software | Cybersecurity | Gaming | Safety & Security</Typography>
+        </div>
+
+        <div className="App-link">
+          <Grid
+            container
+            direction='row'
+            alignItems={'flex-end'}
+            justifyContent={'space-around'}>
+              <Link href='#' underline='hover' color='inherit'>
+              <Typography variant='h6'>Software</Typography>
+              </Link>
+               |
+               <Link href='#' underline='hover' color='inherit'>
+              <Typography variant='h6'>Cybersecurity</Typography>
+              </Link>
+               |
+               <Link href='#' underline='hover' color='inherit'>
+              <Typography variant='h6'>Games</Typography>
+              </Link>
+               |
+               <Link href='#' underline='hover' color='inherit'>
+              <Typography variant='h6'>Safety & Security</Typography>
+              </Link>
+               
+            </Grid>
+            
         </div>
         
       </div>
