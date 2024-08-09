@@ -1,10 +1,38 @@
 import React from 'react';
 import './App.css';
-import { Button, Grid, Link, Typography } from '@mui/material';
+import { AppBar, Button, Container, Grid, Link, Menu, Toolbar, Typography } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const App: React.FC = (): React.ReactElement => {
   return (
     <div className="App">
+
+      <div className="App-top">
+        <AppBar position='static' color='transparent'>
+          <Container>
+            <Toolbar disableGutters>
+              <MenuIcon />
+            <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+            Jesse Suksia
+          </Typography>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      </div>
 
       <div className="App-header">
         <div className="App-title">
@@ -16,9 +44,9 @@ const App: React.FC = (): React.ReactElement => {
           <Grid
             container
             direction='row'
-            alignItems={'flex-end'}
+            alignItems={'space-between'}
             margin={5}
-            justifyContent={'space-around'}>
+            justifyContent={'space-between'}>
             <Link href='/home' underline='hover' color='inherit'>
               <Typography variant='h5'>Software</Typography>
             </Link>
