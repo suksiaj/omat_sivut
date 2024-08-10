@@ -3,7 +3,13 @@ import { AppBar, Button, Container, Drawer, Grid, Link, Menu, Toolbar, Typograph
 import MenuIcon from '@mui/icons-material/Menu';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import HomeIcon from '@mui/icons-material/Home';
 import '../App.css';
+import { Home } from '@mui/icons-material';
+import CodeIcon from '@mui/icons-material/Code';
+import SecurityIcon from '@mui/icons-material/Security';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
 const Menubar: React.FC = (): React.ReactElement => {
 
@@ -22,16 +28,52 @@ const Menubar: React.FC = (): React.ReactElement => {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={handleDrawerClose}>
       <List>
-        {['Home', 'Software', 'Cyber', 'Safety&Security', 'Games'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+        
+          <ListItem disablePadding>
+            <ListItemButton href='/'>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {<HomeIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary='Home' />
             </ListItemButton>
           </ListItem>
-        ))}
+
+          <ListItem disablePadding>
+            <ListItemButton href='/software'>
+              <ListItemIcon>
+                {<CodeIcon />}
+              </ListItemIcon>
+              <ListItemText primary='Software' />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton href='/cyber'>
+              <ListItemIcon>
+                {<TerminalIcon />}
+              </ListItemIcon>
+              <ListItemText primary='Cyber' />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton href='/games'>
+              <ListItemIcon>
+                {<SportsEsportsIcon />}
+              </ListItemIcon>
+              <ListItemText primary='Games' />
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem disablePadding>
+            <ListItemButton href='/security'>
+              <ListItemIcon>
+                {<SecurityIcon />}
+              </ListItemIcon>
+              <ListItemText primary='Safety&Security' />
+            </ListItemButton>
+          </ListItem>
+        
       </List>
       <Divider />
       <List>
