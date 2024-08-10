@@ -1,15 +1,14 @@
 import React from 'react';
 import { AppBar, Button, Container, Drawer, Grid, Link, Menu, Toolbar, Typography, Divider, IconButton, Box, List, ListItem, ListItemText, ListItemButton, ListItemIcon } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
 import '../App.css';
-import { Home } from '@mui/icons-material';
 import CodeIcon from '@mui/icons-material/Code';
 import SecurityIcon from '@mui/icons-material/Security';
 import TerminalIcon from '@mui/icons-material/Terminal';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
+import InfoIcon from '@mui/icons-material/Info';
 
 const Menubar: React.FC = (): React.ReactElement => {
 
@@ -24,7 +23,6 @@ const Menubar: React.FC = (): React.ReactElement => {
   };
 
 
-  // Valikon koodi tulee muuttaa listamaiseksi
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={handleDrawerClose}>
       <List>
@@ -77,16 +75,25 @@ const Menubar: React.FC = (): React.ReactElement => {
       </List>
       <Divider />
       <List>
-        {['Bio', 'Contact me'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
+
+      <ListItem disablePadding>
+            <ListItemButton href='/bio'>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {<InfoIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary='Bio' />
             </ListItemButton>
           </ListItem>
-        ))}
+
+          <ListItem disablePadding>
+            <ListItemButton href='/contact'>
+              <ListItemIcon>
+                {<MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary='Contact me' />
+            </ListItemButton>
+          </ListItem>
+
       </List>
     </Box>
   );
