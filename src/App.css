@@ -3,6 +3,12 @@
   background-color: #282c34;
 }
 
+.App-top {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

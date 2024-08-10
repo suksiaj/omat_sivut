@@ -13,6 +13,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 import Collapse from '@mui/material/Collapse';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Menubar: React.FC = (): React.ReactElement => {
 
@@ -37,12 +38,20 @@ const Menubar: React.FC = (): React.ReactElement => {
 
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation">
+    <Box sx={{ width: 250, height: '100%', backgroundColor: '#282c34', color: 'white' }} role="presentation">
+      <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginTop: "10px", marginRight: "25px" }}>
+        <IconButton
+          onClick={handleDrawerClose}
+          sx={{ color: 'white' }}>
+          <CloseIcon />
+        </IconButton>
+      </Box>
+
       <List>
 
         <ListItem disablePadding>
           <ListItemButton href='/' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<HomeIcon />}
             </ListItemIcon>
             <ListItemText primary='Home' />
@@ -51,14 +60,14 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton onClick={() => {
-            nestedOpen 
-            ? handleNestedClose() 
-            : handleNestedOpen();
+            nestedOpen
+              ? handleNestedClose()
+              : handleNestedOpen();
           }}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<CodeIcon />}
             </ListItemIcon>
-            <ListItemText primary='Software' />
+            <ListItemText primary='IT' />
             {nestedOpen
               ? <ExpandLess />
               : <ExpandMore />}
@@ -67,14 +76,14 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }} onClick={() => {
+            <ListItemButton sx={{ pl: 4 }} href='/software' onClick={() => {
               handleNestedClose();
               handleDrawerClose();
             }}>
-              <ListItemIcon>
+              <ListItemIcon sx={{ color: 'white' }}>
                 <StarBorder />
               </ListItemIcon>
-              <ListItemText primary="Starred" />
+              <ListItemText primary="Software" />
             </ListItemButton>
           </List>
         </Collapse>
@@ -82,7 +91,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton href='/cyber' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<TerminalIcon />}
             </ListItemIcon>
             <ListItemText primary='Cyber' />
@@ -91,7 +100,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton href='/games' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<SportsEsportsIcon />}
             </ListItemIcon>
             <ListItemText primary='Games' />
@@ -100,7 +109,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton href='/security' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<SecurityIcon />}
             </ListItemIcon>
             <ListItemText primary='Safety&Security' />
@@ -113,7 +122,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton href='/bio' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<InfoIcon />}
             </ListItemIcon>
             <ListItemText primary='Bio' />
@@ -122,7 +131,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <ListItem disablePadding>
           <ListItemButton href='/contact' onClick={() => handleDrawerClose()}>
-            <ListItemIcon>
+            <ListItemIcon sx={{ color: 'white' }}>
               {<MailIcon />}
             </ListItemIcon>
             <ListItemText primary='Contact me' />
@@ -135,7 +144,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
   return (
     <div className="App-top">
-      <AppBar position='static' color='success'>
+      <AppBar position='static' color='transparent'>
         <Container>
           <Toolbar disableGutters>
             <IconButton
@@ -143,7 +152,7 @@ const Menubar: React.FC = (): React.ReactElement => {
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               edge="start"
-              sx={{ mr: 2, ...(open && { display: 'none' }) }}
+              sx={{ mr: 2, ...(open && { display: 'inline' }) }}
             >
               <MenuIcon />
             </IconButton>
@@ -166,7 +175,7 @@ const Menubar: React.FC = (): React.ReactElement => {
           </Toolbar>
         </Container>
       </AppBar>
-      <Drawer open={open} onClose={handleDrawerClose}>
+      <Drawer open={open} onClose={handleDrawerClose} >
         {DrawerList}
       </Drawer>
     </div>
