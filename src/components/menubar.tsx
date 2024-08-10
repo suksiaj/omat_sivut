@@ -41,7 +41,7 @@ const Menubar: React.FC = (): React.ReactElement => {
       <List>
 
         <ListItem disablePadding>
-          <ListItemButton href='/' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<HomeIcon />}
             </ListItemIcon>
@@ -50,32 +50,38 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton onClick={() => setNestedOpen(true)}>
+          <ListItemButton onClick={() => {
+            nestedOpen 
+            ? handleNestedClose() 
+            : handleNestedOpen();
+          }}>
             <ListItemIcon>
               {<CodeIcon />}
             </ListItemIcon>
             <ListItemText primary='Software' />
-            {nestedOpen ? <ExpandLess /> : <ExpandMore />}
+            {nestedOpen
+              ? <ExpandLess />
+              : <ExpandMore />}
           </ListItemButton>
         </ListItem>
 
         <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-              <ListItemButton sx={{ pl: 4 }} onClick={() => {
-                handleNestedClose();
-                handleDrawerClose();
-              }}>
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
-                <ListItemText primary="Starred" />
-              </ListItemButton>
-            </List>
-          </Collapse>
+          <List component="div" disablePadding>
+            <ListItemButton sx={{ pl: 4 }} onClick={() => {
+              handleNestedClose();
+              handleDrawerClose();
+            }}>
+              <ListItemIcon>
+                <StarBorder />
+              </ListItemIcon>
+              <ListItemText primary="Starred" />
+            </ListItemButton>
+          </List>
+        </Collapse>
 
 
         <ListItem disablePadding>
-          <ListItemButton href='/cyber' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/cyber' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<TerminalIcon />}
             </ListItemIcon>
@@ -84,7 +90,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href='/games' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/games' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<SportsEsportsIcon />}
             </ListItemIcon>
@@ -93,7 +99,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href='/security' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/security' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<SecurityIcon />}
             </ListItemIcon>
@@ -106,7 +112,7 @@ const Menubar: React.FC = (): React.ReactElement => {
       <List>
 
         <ListItem disablePadding>
-          <ListItemButton href='/bio' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/bio' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<InfoIcon />}
             </ListItemIcon>
@@ -115,7 +121,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href='/contact' onClick={() => handleDrawerClose}>
+          <ListItemButton href='/contact' onClick={() => handleDrawerClose()}>
             <ListItemIcon>
               {<MailIcon />}
             </ListItemIcon>
