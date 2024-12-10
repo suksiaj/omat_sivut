@@ -1,7 +1,6 @@
 import '../App.css';
 import React from 'react';
 import { AppBar, Button, Container, Grid, Link, Menu, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 
 const Home: React.FC = (): React.ReactElement => {
     return(
@@ -19,7 +18,8 @@ const Home: React.FC = (): React.ReactElement => {
             direction='row'
             alignItems={'space-between'}
             margin={5}
-            justifyContent={'space-between'}>
+            justifyContent={'space-between'}
+            sx={{backgroundColor: 'rgba(240, 248, 255, 0.5)', padding: '5px'}}>
             <Link href='/home' underline='hover' color='inherit'>
               <Typography variant='h5'>Software</Typography>
             </Link>

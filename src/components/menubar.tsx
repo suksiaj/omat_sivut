@@ -170,7 +170,10 @@ const Menubar: React.FC = (): React.ReactElement => {
                 textDecoration: 'none',
               }}
             >
+              <Link href= '/' variant='inherit' color='inherit' underline='none'>
               Jesse Suksia
+              </Link>
+              
             </Typography>
           </Toolbar>
         </Container>

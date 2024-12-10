@@ -61,6 +61,17 @@
   color: #61dafb;
 }
 
+.Page-title {
+  text-align: center;
+}
+
+.Page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -7,8 +7,6 @@ import  Security  from './routes/security';
 import  Games  from './routes/games';
 import Software from './routes/sofware';
 import Bio from './routes/bio';
-import { AppBar, Button, Container, Grid, Link, Menu, Toolbar, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import Menubar from './components/menubar';
 
 
