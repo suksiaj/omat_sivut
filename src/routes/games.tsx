@@ -13,7 +13,7 @@ const Games: React.FC = (): React.ReactElement => {
                 <Paper
                     elevation={24}
                     variant='elevation'
-                    sx={{ marginTop: '10px', width: "80%", textAlign: "center", padding: "20px", backgroundColor: "inherit" }}>
+                    sx={{ marginTop: '10px', width: "80%", textAlign: "center", padding: "20px", backgroundColor: "inherit", color: 'inherit' }}>
                     <Typography>
                         Asiaa
                     </Typography>
@@ -24,9 +24,10 @@ const Games: React.FC = (): React.ReactElement => {
                 <Paper
                     elevation={24}
                     variant='elevation'
-                    sx={{ marginTop: '10px', width: "80%", textAlign: "center", padding: "20px", backgroundColor: "inherit" }}>
+                    sx={{ marginTop: '10px', width: "80%", textAlign: "center", padding: "20px", backgroundColor: "inherit", color: 'inherit' }}>
                     <Typography>
-                        Lisää asiaa
+                        My introduction to IT fiel was through game development open courses provided by South-Eastern Finland University of Applied Sciences (XAMK).
+                        I was totally hooked and next spring I applied to study data processing at XAMK.
                     </Typography>
                 </Paper>
 
