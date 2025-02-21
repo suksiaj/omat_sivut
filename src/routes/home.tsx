@@ -19,7 +19,7 @@ const Home: React.FC = (): React.ReactElement => {
             alignItems={'space-between'}
             margin={5}
             justifyContent={'space-between'}
-            sx={{backgroundColor: 'rgba(240, 248, 255, 0.5)', padding: '5px'}}>
+            sx={{backgroundColor: 'rgba(159, 210, 255, 0.5)', padding: '5px', borderRadius: '15px'}}>
             <Link href='/home' underline='hover' color='inherit'>
               <Typography variant='h5'>Software</Typography>
             </Link>
