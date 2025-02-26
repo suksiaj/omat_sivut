@@ -44,9 +44,7 @@ const Bio: React.FC = (): React.ReactElement => {
                         elevation={24}
                         variant='elevation'
                         sx={paperStyle}>
-                        <Typography>
-                            Tähän kuva minusta
-                        </Typography>
+                            <img src="/images/mina.jpg" alt="Jesse Suksia" className="Page-image" />
                     </Paper>
 
                 </div>

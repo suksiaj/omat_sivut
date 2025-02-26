@@ -82,7 +82,7 @@
 
 .Page-title {
   text-align: center;
-  color: #005269
+  color: #007494
 }
 
 .Page-content {
@@ -91,4 +91,12 @@
   justify-content: center;
   width: 50vw;
   color: white;
+}
+
+.Page-image {
+  width: 20vw;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px black;
 }
