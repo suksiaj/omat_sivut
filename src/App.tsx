@@ -8,6 +8,7 @@ import  Games  from './routes/games';
 import Software from './routes/sofware';
 import Bio from './routes/bio';
 import Menubar from './components/menubar';
+import Footer from './components/footer';
 
 
 const App: React.FC = (): React.ReactElement => {
@@ -25,6 +26,8 @@ const App: React.FC = (): React.ReactElement => {
       <Route path='/software' element={<Software />} />  
       <Route path='/bio' element={<Bio />} />
     </Routes>
+
+    <Footer/>
     </>
   );
 }
