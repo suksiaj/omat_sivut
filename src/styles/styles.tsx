@@ -20,3 +20,10 @@ export const formStyle = {
     flexDirection: 'column',
 
 }
+
+export const formTexFieldStyle = {
+    margin: '5px',
+    backgroundColor: 'white',
+    color: 'black',
+    borderRadius: '5px'
+}
