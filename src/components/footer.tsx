@@ -4,8 +4,11 @@ import { Box, IconButton, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+
+
 const Footer: React.FC = (): React.ReactElement => {
 
+const [year, setYear] = React.useState<number>(new Date().getFullYear());
 
     return (
 
@@ -19,7 +22,7 @@ const Footer: React.FC = (): React.ReactElement => {
                 <LinkedInIcon />
             </IconButton>
 
-            <Typography variant='body2'>&copy; Jesse Suksia 2025</Typography>
+            <Typography variant='body2'>&copy; Jesse Suksia {year}</Typography>
 
         </Box>
 
