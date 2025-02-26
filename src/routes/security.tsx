@@ -1,15 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import '../App.css';
-
-const paperStyle = {
-    marginTop: '10px',
-    width: '80%',
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: 'inherit',
-    color: 'white',
-    minHeight: '20vh'
-};
+import React from 'react';
+import { paperStyle } from '../styles/styles';
 
 const Security: React.FC = (): React.ReactElement => {
     return (
@@ -45,6 +37,8 @@ const Security: React.FC = (): React.ReactElement => {
                     </Paper>
 
                 </div>
+
+                
 
             </Grid>
 

@@ -1,15 +1,6 @@
 import { Grid, Paper, Typography } from '@mui/material';
 import '../App.css';
-
-const paperStyle = {
-    marginTop: '10px',
-    width: '80%',
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: 'inherit',
-    color: 'white',
-    minHeight: '20vh'
-};
+import { paperStyle } from '../styles/styles';
 
 const Games: React.FC = (): React.ReactElement => {
     return (
