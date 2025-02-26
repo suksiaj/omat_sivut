@@ -1,6 +1,16 @@
 import { Typography, Paper, Container } from '@mui/material';
 import '../App.css';
 
+const paperStyle = {
+    marginTop: '10px',
+    width: '80%',
+    textAlign: 'center',
+    padding: '20px',
+    backgroundColor: 'inherit',
+    color: 'white',
+    minHeight: '20vh'
+};
+
 const Bio: React.FC = (): React.ReactElement => {
     return (
         <Container>
@@ -10,7 +20,7 @@ const Bio: React.FC = (): React.ReactElement => {
             </div>
 
             <div className="Page-content">
-                <Paper elevation={24} variant='outlined' sx={{ marginTop: '10px', width: "80%", textAlign: "center", padding: "20px" }}>
+                <Paper elevation={24} variant='outlined' sx={paperStyle}>
                     <Typography variant='h4'>Jesse Suksia</Typography>
                     <Typography>
                         Hi! I'm Jesse Suksia, data processing student and security professional from Finland.

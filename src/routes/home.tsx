@@ -20,7 +20,7 @@ const Home: React.FC = (): React.ReactElement => {
             margin={5}
             justifyContent={'space-between'}
             sx={{backgroundColor: 'rgba(159, 210, 255, 0.5)', padding: '5px', borderRadius: '15px'}}>
-            <Link href='/home' underline='hover' color='inherit'>
+            <Link href='/software' underline='hover' color='inherit'>
               <Typography variant='h5'>Software</Typography>
             </Link>
             |
@@ -32,7 +32,7 @@ const Home: React.FC = (): React.ReactElement => {
               <Typography variant='h5'>Games</Typography>
             </Link>
             |
-            <Link href='/sec' underline='hover' color='inherit'>
+            <Link href='/security' underline='hover' color='inherit'>
               <Typography variant='h5'>Safety & Security</Typography>
             </Link>
 
