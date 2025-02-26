@@ -29,12 +29,18 @@ const Contact: React.FC = (): React.ReactElement => {
                         variant='elevation'
                         sx={formStyle}>
 
-                        <TextField id="name" label="Name" variant="filled" margin='dense' sx={formTexFieldStyle}/>
-                        <TextField id="topic" label="Topic" variant="filled" margin='dense' sx={formTexFieldStyle}/>
-                        <TextField id="email" label="E-mail" variant="filled" margin='dense' sx={formTexFieldStyle}/>
-                        <TextField id="message" label="Message" variant="filled" multiline rows={4} margin='dense'sx={formTexFieldStyle}/>
+                        <TextField id="name" label="Name" variant="filled" margin='dense' sx={formTexFieldStyle} />
+                        <TextField id="topic" label="Topic" variant="filled" margin='dense' sx={formTexFieldStyle} />
+                        <TextField id="email" label="E-mail" variant="filled" margin='dense' sx={formTexFieldStyle} />
+                        <TextField id="message" label="Message" variant="filled" multiline rows={4} margin='dense' sx={formTexFieldStyle} />
 
-                        <Button variant="contained" sx={{ margin: "5px" }}>Send</Button>
+                        <Button
+                            variant="contained"
+                            sx={{ margin: "5px" }}
+                            onClick={() => { console.log("Message sent!") }}
+                        >
+                            Send
+                        </Button>
 
                     </Paper>
 
