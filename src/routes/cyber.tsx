@@ -28,6 +28,10 @@ const Cyber: React.FC = (): React.ReactElement => {
                         elevation={24}
                         variant='elevation'
                         sx={paperStyle}>
+                        <Typography variant='h4'>
+                            Badges and certificates
+                        </Typography>
+
                         <iframe title="TryHackMe Profile" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2066148" style={{ border: 'none', width: '358px' }}></iframe>
                     </Paper>
 
