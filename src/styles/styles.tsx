@@ -7,3 +7,16 @@ export const paperStyle = {
     color: 'white',
     minHeight: '20vh'
 };
+
+export const formStyle = {
+    margin: '10px',
+    width: '80%',
+    textAlign: 'center',
+    padding: '20px',
+    backgroundColor: "#282c34",
+    color: 'white',
+    minHeight: '20vh',
+    display: 'flex',
+    flexDirection: 'column',
+
+}

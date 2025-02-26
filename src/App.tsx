@@ -9,6 +9,7 @@ import Software from './routes/sofware';
 import Bio from './routes/bio';
 import Menubar from './components/menubar';
 import Footer from './components/footer';
+import Contact from './routes/contact';
 
 
 const App: React.FC = (): React.ReactElement => {
@@ -25,6 +26,7 @@ const App: React.FC = (): React.ReactElement => {
       <Route path='/games' element={<Games />} />
       <Route path='/software' element={<Software />} />  
       <Route path='/bio' element={<Bio />} />
+      <Route path='/contact' element={<Contact/>}/>
     </Routes>
 
     <Footer/>
