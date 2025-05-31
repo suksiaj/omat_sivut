@@ -4,7 +4,7 @@ import { AppBar, Button, Container, Grid, Link, Menu, Toolbar, Typography } from
 
 const Home: React.FC = (): React.ReactElement => {
     return(
-        <div className="App">
+        <div >
 
       <div className="App-header">
         <div className="App-title">

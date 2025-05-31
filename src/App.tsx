@@ -16,7 +16,7 @@ const App: React.FC = (): React.ReactElement => {
 
   return (
     
-    <>
+    <div className='App'>
     <Menubar />
     
     <Routes>
@@ -30,7 +30,7 @@ const App: React.FC = (): React.ReactElement => {
     </Routes>
 
     <Footer/>
-    </>
+    </div>
   );
 }
 
