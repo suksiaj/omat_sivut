@@ -1,6 +1,7 @@
 import { Button, Grid, Paper, TextField, Typography } from '@mui/material';
-import '../App.css';
-import { formStyle, paperStyle, formTexFieldStyle } from '../styles/styles';
+import '../../App.css';
+import './Contact.css';
+import { formStyle, paperStyle, formTexFieldStyle } from '../../styles/styles';
 
 const Contact: React.FC = (): React.ReactElement => {
     return (

@@ -1,13 +1,13 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import React from 'react';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Software.css';
+import { paperStyle } from '../../styles/styles';
 
-const Security: React.FC = (): React.ReactElement => {
+const Software: React.FC = (): React.ReactElement => {
     return (
         <div className='Page'>
             <div className="Page-title">
-                <Typography variant="h1">Security</Typography>
+                <Typography variant="h1">Software</Typography>
             </div>
 
             <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -28,21 +28,21 @@ const Security: React.FC = (): React.ReactElement => {
                     <Paper
                         elevation={24}
                         variant='elevation'
-                        sx={paperStyle}>
+                        sx={paperStyle}
+                    >
                         <Typography>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nemo facere
-                            cupiditate deleniti qui expedita, suscipit beatae exercitationem quae, sit nam
-                            facilis at esse sint nesciunt eveniet maiores earum vel?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                            quibusdam voluptate id impedit placeat molestias obcaecati ullam iusto,
+                            amet maiores incidunt non. Quia minima est perspiciatis ea temporibus reprehenderit soluta.
                         </Typography>
                     </Paper>
 
                 </div>
-
-
 
             </Grid>
 
         </div>
     )
 }
-export default Security;
+
+export default Software;

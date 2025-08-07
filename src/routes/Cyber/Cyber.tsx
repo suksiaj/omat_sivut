@@ -1,12 +1,13 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Cyber.css';
+import { paperStyle } from '../../styles/styles';
 
-const Games: React.FC = (): React.ReactElement => {
+const Cyber: React.FC = (): React.ReactElement => {
     return (
         <div className='Page'>
             <div className="Page-title">
-                <Typography variant="h1">Games</Typography>
+                <Typography variant="h1">Cyber</Typography>
             </div>
 
             <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -28,11 +29,11 @@ const Games: React.FC = (): React.ReactElement => {
                         elevation={24}
                         variant='elevation'
                         sx={paperStyle}>
-                        <Typography>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nemo facere
-                            cupiditate deleniti qui expedita, suscipit beatae exercitationem quae, sit nam
-                            facilis at esse sint nesciunt eveniet maiores earum vel?
+                        <Typography variant='h4'>
+                            Badges and certificates
                         </Typography>
+
+                        <iframe title="TryHackMe Profile" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2066148" style={{ border: 'none', width: '358px' }}></iframe>
                     </Paper>
 
                 </div>
@@ -40,7 +41,8 @@ const Games: React.FC = (): React.ReactElement => {
             </Grid>
 
         </div>
+
     )
 }
 
-export default Games;
+export default Cyber;

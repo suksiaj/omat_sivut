@@ -1,12 +1,13 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Games.css';
+import { paperStyle } from '../../styles/styles';
 
-const Software: React.FC = (): React.ReactElement => {
+const Games: React.FC = (): React.ReactElement => {
     return (
         <div className='Page'>
             <div className="Page-title">
-                <Typography variant="h1">Software</Typography>
+                <Typography variant="h1">Games</Typography>
             </div>
 
             <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -27,12 +28,11 @@ const Software: React.FC = (): React.ReactElement => {
                     <Paper
                         elevation={24}
                         variant='elevation'
-                        sx={paperStyle}
-                    >
+                        sx={paperStyle}>
                         <Typography>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                            quibusdam voluptate id impedit placeat molestias obcaecati ullam iusto,
-                            amet maiores incidunt non. Quia minima est perspiciatis ea temporibus reprehenderit soluta.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nemo facere
+                            cupiditate deleniti qui expedita, suscipit beatae exercitationem quae, sit nam
+                            facilis at esse sint nesciunt eveniet maiores earum vel?
                         </Typography>
                     </Paper>
 
@@ -44,4 +44,4 @@ const Software: React.FC = (): React.ReactElement => {
     )
 }
 
-export default Software;
+export default Games;

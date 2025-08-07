@@ -1,4 +1,5 @@
-import '../App.css';
+import '../../App.css';
+import './Home.css';
 import React from 'react';
 import { Grid, Link, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';

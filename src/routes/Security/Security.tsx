@@ -1,12 +1,14 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Security.css';
+import React from 'react';
+import { paperStyle } from '../../styles/styles';
 
-const Cyber: React.FC = (): React.ReactElement => {
+const Security: React.FC = (): React.ReactElement => {
     return (
         <div className='Page'>
             <div className="Page-title">
-                <Typography variant="h1">Cyber</Typography>
+                <Typography variant="h1">Security</Typography>
             </div>
 
             <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -28,20 +30,20 @@ const Cyber: React.FC = (): React.ReactElement => {
                         elevation={24}
                         variant='elevation'
                         sx={paperStyle}>
-                        <Typography variant='h4'>
-                            Badges and certificates
+                        <Typography>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nemo facere
+                            cupiditate deleniti qui expedita, suscipit beatae exercitationem quae, sit nam
+                            facilis at esse sint nesciunt eveniet maiores earum vel?
                         </Typography>
-
-                        <iframe title="TryHackMe Profile" src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2066148" style={{ border: 'none', width: '358px' }}></iframe>
                     </Paper>
 
                 </div>
 
+
+
             </Grid>
 
         </div>
-
     )
 }
-
-export default Cyber;
+export default Security;

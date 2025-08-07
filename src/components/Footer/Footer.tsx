@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Footer.css';
 import { Box, IconButton, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
