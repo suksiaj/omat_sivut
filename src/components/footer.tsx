@@ -1,14 +1,12 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '../App.css';
 import { Box, IconButton, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-
-
 const Footer: React.FC = (): React.ReactElement => {
 
-const [year, setYear] = React.useState<number>(new Date().getFullYear());
+const year = new Date().getFullYear();
 
     return (
 

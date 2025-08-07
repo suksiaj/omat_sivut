@@ -1,6 +1,7 @@
 import '../App.css';
 import React from 'react';
-import { AppBar, Button, Container, Grid, Link, Menu, Toolbar, Typography } from '@mui/material';
+import { Grid, Link, Typography } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Home: React.FC = (): React.ReactElement => {
     return(
@@ -20,19 +21,19 @@ const Home: React.FC = (): React.ReactElement => {
             margin={5}
             justifyContent={'space-between'}
             sx={{backgroundColor: 'rgba(159, 210, 255, 0.5)', padding: '5px', borderRadius: '15px'}}>
-            <Link href='/software' underline='hover' color='inherit'>
+            <Link component={RouterLink} to='/software' underline='hover' color='inherit'>
               <Typography variant='h5'>Software</Typography>
             </Link>
             |
-            <Link href='/cyber' underline='hover' color='inherit'>
+            <Link component={RouterLink} to='/cyber' underline='hover' color='inherit'>
               <Typography variant='h5'>Cybersecurity</Typography>
             </Link>
             |
-            <Link href='/games' underline='hover' color='inherit'>
+            <Link component={RouterLink} to='/games' underline='hover' color='inherit'>
               <Typography variant='h5'>Games</Typography>
             </Link>
             |
-            <Link href='/security' underline='hover' color='inherit'>
+            <Link component={RouterLink} to='/security' underline='hover' color='inherit'>
               <Typography variant='h5'>Safety & Security</Typography>
             </Link>
 

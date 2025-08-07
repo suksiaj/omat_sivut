@@ -7,9 +7,8 @@ import  Security  from './routes/security';
 import  Games  from './routes/games';
 import Software from './routes/sofware';
 import Bio from './routes/bio';
-import Menubar from './components/menubar';
-import Footer from './components/footer';
 import Contact from './routes/contact';
+import Layout from './routes/Layout';
 
 
 const App: React.FC = (): React.ReactElement => {
@@ -17,19 +16,19 @@ const App: React.FC = (): React.ReactElement => {
   return (
     
     <div className='App'>
-    <Menubar />
     
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path='/cyber' element={<Cyber />} />
-      <Route path='/security' element={<Security />} />
-      <Route path='/games' element={<Games />} />
-      <Route path='/software' element={<Software />} />  
-      <Route path='/bio' element={<Bio />} />
-      <Route path='/contact' element={<Contact/>}/>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="cyber" element={<Cyber />} />
+        <Route path="security" element={<Security />} />
+        <Route path="games" element={<Games />} />
+        <Route path="software" element={<Software />} />
+        <Route path="bio" element={<Bio />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
     </Routes>
 
-    <Footer/>
     </div>
   );
 }
