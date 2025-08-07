@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Paper, TextField, Typography } from '@mui/material';
+import { Button, Grid, Paper, TextField, Typography } from '@mui/material';
 import '../App.css';
 import { formStyle, paperStyle, formTexFieldStyle } from '../styles/styles';
 

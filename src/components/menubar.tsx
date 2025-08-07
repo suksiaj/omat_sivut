@@ -16,7 +16,7 @@ import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link as RouterLink } from 'react-router-dom';
 
-const Menubar : React.FC = (): React.ReactElement => {
+const Menubar: React.FC = (): React.ReactElement => {
 
   const [open, setOpen] = React.useState(false);
   const [nestedOpen, setNestedOpen] = React.useState(false);
@@ -42,7 +42,7 @@ const Menubar : React.FC = (): React.ReactElement => {
       <List>
 
         <ListItem disablePadding>
-          <ListItemButton component={RouterLink} to="/" onClick={handleDrawer}> 
+          <ListItemButton component={RouterLink} to="/" onClick={handleDrawer}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<HomeIcon />}
             </ListItemIcon>
@@ -51,7 +51,7 @@ const Menubar : React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton onClick={handleNested }>
+          <ListItemButton onClick={handleNested}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<CodeIcon />}
             </ListItemIcon>
@@ -167,10 +167,10 @@ const Menubar : React.FC = (): React.ReactElement => {
                 textDecoration: 'none',
               }}
             >
-              <Link component={RouterLink} to= '/' variant='inherit' color='inherit' underline='none'>
-              Jesse Suksia
+              <Link component={RouterLink} to='/' variant='inherit' color='inherit' underline='none'>
+                Jesse Suksia
               </Link>
-              
+
             </Typography>
           </Toolbar>
         </Container>

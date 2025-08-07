@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import  Home  from './routes/home';
-import  Cyber  from './routes/cyber';
-import  Security  from './routes/security';
-import  Games  from './routes/games';
-import Software from './routes/sofware';
-import Bio from './routes/bio';
-import Contact from './routes/contact';
+import Home from './routes/Home';
+import Cyber from './routes/Cyber';
+import Security from './routes/Security';
+import Games from './routes/Games';
+import Software from './routes/Software';
+import Bio from './routes/Bio';
+import Contact from './routes/Contact';
 import Layout from './routes/Layout';
 
 

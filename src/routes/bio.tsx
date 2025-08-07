@@ -1,4 +1,4 @@
-import { Typography, Paper, Container, Grid } from '@mui/material';
+import { Typography, Paper, Grid } from '@mui/material';
 import '../App.css';
 import { paperStyle } from '../styles/styles';
 
@@ -44,7 +44,7 @@ const Bio: React.FC = (): React.ReactElement => {
                         elevation={24}
                         variant='elevation'
                         sx={paperStyle}>
-                            <img src="/images/mina.jpg" alt="Jesse Suksia" className="Page-image" />
+                        <img src="/images/mina.jpg" alt="Jesse Suksia" className="Page-image" />
                     </Paper>
 
                 </div>
