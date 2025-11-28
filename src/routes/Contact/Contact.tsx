@@ -1,7 +1,7 @@
 import { Button, Grid, Paper, TextField, Typography } from '@mui/material';
 import '../../App.css';
 import './Contact.css';
-import { formStyle, paperStyle, formTexFieldStyle } from '../../styles/styles';
+import { formStyle, paperStyle, formTextFieldStyle } from '../../styles/styles';
 
 const Contact: React.FC = (): React.ReactElement => {
     return (
@@ -30,13 +30,14 @@ const Contact: React.FC = (): React.ReactElement => {
                         variant='elevation'
                         sx={formStyle}>
 
-                        <TextField id="name" label="Name" variant="filled" margin='dense' sx={formTexFieldStyle} />
-                        <TextField id="topic" label="Topic" variant="filled" margin='dense' sx={formTexFieldStyle} />
-                        <TextField id="email" label="E-mail" variant="filled" margin='dense' sx={formTexFieldStyle} />
-                        <TextField id="message" label="Message" variant="filled" multiline rows={4} margin='dense' sx={formTexFieldStyle} />
+                        <TextField id="name" label="Name" variant="filled" margin='dense' sx={formTextFieldStyle} />
+                        <TextField id="topic" label="Topic" variant="filled" margin='dense' sx={formTextFieldStyle} />
+                        <TextField id="email" label="E-mail" variant="filled" margin='dense' sx={formTextFieldStyle} />
+                        <TextField id="message" label="Message" variant="filled" multiline rows={4} margin='dense' sx={formTextFieldStyle} />
 
                         <Button
                             variant="contained"
+                            color="primary"
                             sx={{ margin: "5px" }}
                             onClick={() => { console.log("Message sent!") }}
                         >

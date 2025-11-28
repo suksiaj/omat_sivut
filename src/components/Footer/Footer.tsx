@@ -10,17 +10,17 @@ const Footer: React.FC = (): React.ReactElement => {
 
     return (
 
-        <Box className='App-footer' sx={{ padding: '5px' }}>
+        <Box className='App-footer'>
 
-            <IconButton href='https://www.github.com/djesu004xamk' color='secondary'>
+            <IconButton href='https://www.github.com/djesu004xamk' color='primary'>
                 <GitHubIcon />
             </IconButton>
 
-            <IconButton href='https://www.linkedin.com/in/jesse-suksia' color='primary'>
+            <IconButton href='https://www.linkedin.com/in/jesse-suksia' color='secondary'>
                 <LinkedInIcon />
             </IconButton>
 
-            <Typography variant='body2'>&copy; Jesse Suksia {year}</Typography>
+            <Typography variant='body2' color='text.secondary'>&copy; Jesse Suksia {year}</Typography>
 
         </Box>
 

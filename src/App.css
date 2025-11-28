@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #282c34;
   min-height: 100vh;
 }
 
@@ -19,7 +18,6 @@
   position: relative;
   background-image: url("../public/images/tyopoyta.jpg");
   height: 85vh;
-  background-color: #005269;
   background-size: cover;
   background-position: center;
   
@@ -29,7 +27,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-shadow: #005269 0px 0px 10px;
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.8), 0 0 40px rgba(0, 188, 212, 0.5);
   overflow: hidden;
 }
 
@@ -45,7 +43,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle, transparent, rgba(40, 44, 52, 1));
+  background: radial-gradient(circle, transparent, rgba(10, 25, 41, 0.9));
   z-index: 1;
   pointer-events: none;
 }
@@ -55,21 +53,19 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #00e5ff;
 }
 
 .Page {
-  background-color: #2c313b;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 85vh;
-
 }
 
 .Page-title {
   text-align: center;
-  color: #007494
+  padding: 20px;
 }
 
 .Page-content {
