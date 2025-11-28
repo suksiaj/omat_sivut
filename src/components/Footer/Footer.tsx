@@ -1,18 +1,16 @@
 import React from 'react';
-import '../App.css';
+import './Footer.css';
 import { Box, IconButton, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-
-
 const Footer: React.FC = (): React.ReactElement => {
 
-const [year, setYear] = React.useState<number>(new Date().getFullYear());
+    const year = new Date().getFullYear();
 
     return (
 
-        <Box className='App-footer' sx={{padding: '5px'}}>
+        <Box className='App-footer' sx={{ padding: '5px' }}>
 
             <IconButton href='https://www.github.com/djesu004xamk' color='secondary'>
                 <GitHubIcon />

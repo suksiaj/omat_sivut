@@ -1,6 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Software.css';
+import { paperStyle } from '../../styles/styles';
 
 const Software: React.FC = (): React.ReactElement => {
     return (

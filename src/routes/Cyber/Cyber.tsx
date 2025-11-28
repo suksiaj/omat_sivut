@@ -1,6 +1,7 @@
-import { Container, Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import { Grid, Paper, Typography } from '@mui/material';
+import '../../App.css';
+import './Cyber.css';
+import { paperStyle } from '../../styles/styles';
 
 const Cyber: React.FC = (): React.ReactElement => {
     return (

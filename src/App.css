@@ -4,20 +4,6 @@
   min-height: 100vh;
 }
 
-.App-top {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-}
-
-.App-footer {
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  position: relative;
-  bottom: 0;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;

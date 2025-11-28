@@ -1,12 +1,14 @@
 import { Grid, Paper, Typography } from '@mui/material';
-import '../App.css';
-import { paperStyle } from '../styles/styles';
+import '../../App.css';
+import './Security.css';
+import React from 'react';
+import { paperStyle } from '../../styles/styles';
 
-const Games: React.FC = (): React.ReactElement => {
+const Security: React.FC = (): React.ReactElement => {
     return (
         <div className='Page'>
             <div className="Page-title">
-                <Typography variant="h1">Games</Typography>
+                <Typography variant="h1">Security</Typography>
             </div>
 
             <Grid container direction='row' justifyContent='center' alignItems='center'>
@@ -37,10 +39,11 @@ const Games: React.FC = (): React.ReactElement => {
 
                 </div>
 
+
+
             </Grid>
 
         </div>
     )
 }
-
-export default Games;
+export default Security;

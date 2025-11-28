@@ -1,9 +1,10 @@
 import React from 'react';
-import { AppBar, Button, Container, Drawer, Grid, Link, Menu, Toolbar, Typography, Divider, IconButton, Box, List, ListItem, ListItemText, ListItemButton, ListItemIcon } from '@mui/material';
+import { AppBar, Container, Drawer, Link, Toolbar, Typography, Divider, IconButton, Box, List, ListItem, ListItemText, ListItemButton, ListItemIcon } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import MailIcon from '@mui/icons-material/Mail';
 import HomeIcon from '@mui/icons-material/Home';
-import '../App.css';
+import '../../App.css';
+import './Menubar.css';
 import CodeIcon from '@mui/icons-material/Code';
 import SecurityIcon from '@mui/icons-material/Security';
 import TerminalIcon from '@mui/icons-material/Terminal';
@@ -14,6 +15,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
 import Collapse from '@mui/material/Collapse';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Menubar: React.FC = (): React.ReactElement => {
 
@@ -41,7 +43,7 @@ const Menubar: React.FC = (): React.ReactElement => {
       <List>
 
         <ListItem disablePadding>
-          <ListItemButton href='/' onClick={handleDrawer}>
+          <ListItemButton component={RouterLink} to="/" onClick={handleDrawer}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<HomeIcon />}
             </ListItemIcon>
@@ -50,7 +52,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton onClick={handleNested }>
+          <ListItemButton onClick={handleNested}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<CodeIcon />}
             </ListItemIcon>
@@ -63,7 +65,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }} href='/software' onClick={() => {
+            <ListItemButton sx={{ pl: 4 }} component={RouterLink} to="/software" onClick={() => {
               handleNested();
               handleDrawer();
             }}>
@@ -77,7 +79,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }} href='/cyber' onClick={() => {
+            <ListItemButton sx={{ pl: 4 }} component={RouterLink} to='/cyber' onClick={() => {
               handleNested();
               handleDrawer();
             }}>
@@ -91,7 +93,7 @@ const Menubar: React.FC = (): React.ReactElement => {
 
         <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }} href='/games' onClick={() => {
+            <ListItemButton sx={{ pl: 4 }} component={RouterLink} to='/games' onClick={() => {
               handleNested();
               handleDrawer();
             }}>
@@ -104,7 +106,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </Collapse>
 
         <ListItem disablePadding>
-          <ListItemButton href='/security' onClick={handleDrawer}>
+          <ListItemButton component={RouterLink} to='/security' onClick={handleDrawer}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<SecurityIcon />}
             </ListItemIcon>
@@ -117,7 +119,7 @@ const Menubar: React.FC = (): React.ReactElement => {
       <List>
 
         <ListItem disablePadding>
-          <ListItemButton href='/bio' onClick={handleDrawer}>
+          <ListItemButton component={RouterLink} to='/bio' onClick={handleDrawer}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<InfoIcon />}
             </ListItemIcon>
@@ -126,7 +128,7 @@ const Menubar: React.FC = (): React.ReactElement => {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton href='/contact' onClick={handleDrawer}>
+          <ListItemButton component={RouterLink} to='/contact' onClick={handleDrawer}>
             <ListItemIcon sx={{ color: 'white' }}>
               {<MailIcon />}
             </ListItemIcon>
@@ -166,10 +168,10 @@ const Menubar: React.FC = (): React.ReactElement => {
                 textDecoration: 'none',
               }}
             >
-              <Link href= '/' variant='inherit' color='inherit' underline='none'>
-              Jesse Suksia
+              <Link component={RouterLink} to='/' variant='inherit' color='inherit' underline='none'>
+                Jesse Suksia
               </Link>
-              
+
             </Typography>
           </Toolbar>
         </Container>
