@@ -28,7 +28,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "reinstall": "if exist node_modules rd /s /q node_modules && if exist package-lock.json del /f package-lock.json && npm install"
   },
   "eslintConfig": {
     "extends": [
