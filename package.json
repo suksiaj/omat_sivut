@@ -16,7 +16,7 @@
     "@types/node": "^20.19.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^6.26.0",
+    "react-router-dom": "^6.30.4",
     "styled-components": "^6.1.12",
     "web-vitals": "^2.1.4"
   },
